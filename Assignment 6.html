@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head>
+  <title>
+    Assignment 6
+  </title>
+  <style>
+  table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 7px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+  *{
+	font-family: Arial, sans;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+h1, h2 {
+	margin: 1em 0 0 0;
+	text-align: center;
+}
+h2 {
+	margin: 0 0 1em 0;
+}
+#container {
+    margin: 0 auto;
+    width: 50%;
+}
+#accordion input {
+	display: none;
+}
+#accordion label {
+	background: #eee;
+	border-radius: .25em;
+	cursor: pointer;
+	display: block;
+	margin-bottom: .125em;
+	padding: .25em 1em;
+	z-index: 20;
+}
+#accordion label:hover {
+	background: #ccc;
+}
+
+#accordion input:checked + label {
+	background: #ccc;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	color: white;
+	margin-bottom: 0;
+}
+#accordion article {
+	background: #f7f7f7;
+	height:0px;
+	overflow:hidden;
+	z-index:10;
+}
+#accordion article p {
+	padding: 1em;
+}
+#accordion input:checked article {
+}
+#accordion input:checked ~ article {
+	border-bottom-left-radius: .25em;
+	border-bottom-right-radius: .25em;
+	height: auto;
+	margin-bottom: .125em;
+}
+body{
+  background-color: lightgray;
+}
+p.serif {
+  font-family: "Times New Roman", Times, serif;
+}
+div {
+  margin: 20px;
+  border: 3px solid #0a0a0a;
+}
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: blue;
+}
+
+/* selected link */
+a:active {
+  color: red;
+}
+img{
+  float: none;
+}
+</style>
+</head>
+<div>
+<body><body style=" color:black">
+  <h1> Ashley Zimmerman </h1>
+  <img src="profile_pic.jpg" alt="Profile Pic" width="300" height=100%>
+  <h3> <p> <a target='_blank' <a href="https://messages.google.com/">Phone: 555-555-5555 </p> </a>
+   </h3>
+  <h3> <p> <a target='_blank' <a href="https://www.google.com/gmail/about/#">Email: anzimme1@asu.edu </p> </a>
+</h3>
+  <h3>
+    <p> <a target='_blank' <a href="https://www.google.com/maps/place/Stauffer+Communication+Arts+A+%26+B/@33.41985,-111.9392979,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08dbb5978e4f:0x2e14a56df7b2a20e!8m2!3d33.41985!4d-111.9371092">Address: Stauffer Communication Arts B Tempe, AZ <p> </a>
+</hr3>
+<hr>
+
+<div id="container">
+		<section id="accordion">
+      <div>
+        <input type="checkbox" id="check-1" />
+				<label for="check-1">Objective:</label>
+        <article>
+        <p
+          class="serif"> I wish to broaden my knowledge and gain a better understanding from a sales point of view, while going to school full-time. I aspire to work in the gaming industry in the future.
+        </p>
+      </article>
+      </div>
+			<div>
+				<input type="checkbox" id="check-2" />
+				<label for="check-2">Education:</label>
+				<article>
+          <table>
+            <tr>
+              <th>Degree</th>
+              <th>School</th>
+              <th>Year</th>
+              <th>GPA</th>
+            </tr>
+            <tr>
+              <td>Digital Culture (Media Processing)</td>
+              <td>Arizona State University</td>
+              <td>2017 - Present</td>
+              <td>3.50</td>
+            </tr>
+            <tr>
+              <td>High School Diploma</td>
+              <td>Kubasaki High School</td>
+              <td>2017</td>
+              <td>3.0</td>
+            </tr>
+          </table>
+				</article>
+			</div>
+			<div>
+				<input type="checkbox" id="check-3" />
+				<label for="check-3">Experience:</label>
+				<article>
+          <ol>
+            <li> PHOTOGRAPHER, Dash Designs: March 2019 - Present</li>
+              <ul>
+                <li> Take photos of product installations.</li>
+                <li> Take photos of various products.</li>
+                <li> Edit photos for website and marketing usage.</li>
+                <li> Also assist as a Customer Service Representative part-time.</li>
+              </ul>
+            <li> TEAM MEMBER, Harkins Theaters: June 2018 - August 2019</li>
+              <ul>
+                <li> Greeting and welcoming customers as they enter and exit the theater.</li>
+                <li> Maintaining a clean theater and surrounding areas.</li>
+                <li> Prepping and cooking various food items.</li>
+                <li> Restocking multiple supplies as needed.</li>
+                <li> Operating register at concession and box office.</li>
+              </ul>
+            <li> LIBRARY ASSISTANT, MCCS Okinawa Summer Program: June 2016 - August 2016</li>
+              <ul>
+                <li> Assisted guest services team for quality and ensured library standards were maintained.</li>
+                <li> Assisted customers with retrieving information.</li>
+                <li> Updated computers and game systems.</li>
+              </ul>
+          </ol>
+				</article>
+			</div>
+			<div>
+				<input type="checkbox" id="check-4" />
+				<label for="check-4">References:</label>
+				<article>
+          <ul>
+            <li> Brad Schiff- Dash Designs- 480-967-2678 </li>
+            <li> Mr. Pham- Harkins Theaters- 480-820-0387 </li>
+          </ul>
+				</article>
+			</div>
+		</section>
+  </div>
+</body>
+</div>
+</html>
